@@ -1,0 +1,41 @@
+pipeline{
+	agent any
+	
+	stages{
+		stage('Clone From SCM'){
+			steps{
+				echo 'Cloning data from the GitHub '
+			}
+		}
+
+		stage('Deploy the code'){
+			steps
+			{
+				echo 'Deploying the code '
+			}
+		}
+		
+		stage('Test the code'){
+			steps
+			{
+				echo 'Test the code '
+			}
+		}
+	
+		stage('Package the code'){
+			steps
+			{
+				echo 'Package the program'
+			}
+		}
+
+		stage('Deploy the program'){
+			steps
+			{
+				echo 'Deploying the program '
+			}
+		}
+		
+	}
+
+}
